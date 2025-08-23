@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  background-color: #34699A;
+  color: #ffff;
+  line-height: 1.6;
+}
+
+.header{
+    background: linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0)100%);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    background-image: "https://www.pinterest.com/pin/563018697546659/";
+}
+
+.searchcontainer{
+ display:flex; justify-content: center;
+ gap: 15px;
+ flex-wrap: wrap;
+ align-items: center;
+
+}
+.searchbox{
+    flex:1;
+    min-width: 300px;
+    max-width: 500px;
+    position: relative
+}
+
+.searchbox.focus{
+    
+    width: 100px;
+    padding: 12px  20px;
+    border: 2px solid#333;
+    border-radius: 25px;
+    background-color: #0000;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.search-input{
+    border-color: black;
+    box-shadow: 0 0 10px red;
+}
+.filter{
+    display: flex;
+    gap: 10px
+    ;
+    flex-wrap: wrap;
+}
+select{
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+
+}
+.select.focus{
+    border-color: black;
+}
+
+.clearbtn{
+    padding : 8px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition:background 0.3s ease;
+    display: none;
+
+
+}
+.clearbtn:hover{
+    background: scroll;
+    display: inline-block;
+}
